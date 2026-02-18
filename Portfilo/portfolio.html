@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Designer Portfolio</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #050505; color: #FAFAFA; }
+        
+        /* Custom Utilities */
+        .glass-nav {
+            background: rgba(5, 5, 5, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .text-gradient {
+            background: linear-gradient(to right, #ffffff, #9ca3af);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .card-hover {
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            border-color: rgba(79, 70, 229, 0.3); /* Accent color hover */
+            background: rgba(255, 255, 255, 0.02);
+        }
+        
+        /* Hide scrollbar for clean look */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #050505; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #444; }
+    </style>
+</head>
+<body class="antialiased selection:bg-indigo-500 selection:text-white">
+
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-tight text-white">krishna reddy<span class="text-indigo-500">.</span></a>
+            
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-neutral-400">
+                <a href="#about" class="hover:text-white transition-colors">About</a>
+                <a href="#services" class="hover:text-white transition-colors">Services</a>
+                <a href="#work" class="hover:text-white transition-colors">Work</a>
+                <a href="#process" class="hover:text-white transition-colors">Process</a>
+            </div>
+
+            <a href="mailto:workwith.krishnareddy@gmail.com" class="hidden md:inline-block text-sm text-neutral-400 hover:text-white transition-colors mr-4">workwith.krishnareddy@gmail.com</a>
+            <a href="tel:+918349245610" class="hidden md:inline-block text-sm text-neutral-400 hover:text-white transition-colors mr-4">+91 83492 45610</a>
+
+            <a href="#contact" class="hidden md:block bg-white text-black px-5 py-2.5 text-sm font-semibold rounded-full hover:bg-neutral-200 transition-colors">
+                Let's Talk
+            </a>
+        </div>
+    </nav>
+
+    <section class="min-h-screen flex flex-col justify-center items-center px-6 pt-20 text-center relative overflow-hidden">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-indigo-600/10 rounded-full blur-[120px] -z-10"></div>
+
+        <div data-aos="fade-up" data-aos-duration="1000">
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 leading-tight">
+                Designing interfaces that<br>
+                <span class="text-gradient">turn users into customers.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-neutral-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                I help ambitious B2B SaaS startups bridge the gap between aesthetics and usability. No fluff—just clean, data-driven design that scales.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="#work" class="px-8 py-4 bg-indigo-600 text-white font-semibold rounded-full hover:bg-indigo-700 transition-all w-full sm:w-auto">
+                    View Selected Work
+                </a>
+                <a href="#contact" class="px-8 py-4 border border-neutral-700 text-neutral-300 font-semibold rounded-full hover:border-white hover:text-white transition-all w-full sm:w-auto">
+                    Hire Me
+                </a>
+            </div>
+            <p class="mt-8 text-xs font-medium text-neutral-500 uppercase tracking-widest">
+                Currently accepting new freelance projects.
+            </p>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 px-6 bg-neutral-950/50">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div data-aos="fade-right">
+                <div class="w-full aspect-square bg-neutral-900 rounded-2xl overflow-hidden relative grayscale hover:grayscale-0 transition-all duration-500">
+                    <img src="assets/profile.jpg" alt="Portrait" class="object-cover w-full h-full opacity-80">
+                </div>
+            </div>
+            <div data-aos="fade-left">
+                <span class="text-indigo-500 text-xs font-bold tracking-widest uppercase mb-4 block">About Me</span>
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">More than just "making it pretty."</h2>
+                <p class="text-neutral-400 mb-6 leading-relaxed">
+                    I am a Product Designer focused on business impact. In a world crowded with noise, clarity is your greatest asset.
+                </p>
+                <p class="text-neutral-400 mb-8 leading-relaxed">
+                    My approach combines behavioral psychology with pixel-perfect UI to create digital products that feel intuitive from the first click. I don't just hand over designs; I partner with engineering teams to ensure the final product matches the vision.
+                </p>
+                <ul class="space-y-3">
+                    <li class="flex items-center text-sm font-medium">
+                        <svg class="w-5 h-5 text-indigo-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        1+ Years of Experience
+                    </li>
+                    <li class="flex items-center text-sm font-medium">
+                        <svg class="w-5 h-5 text-indigo-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        User-Centric Methodology
+                    </li>
+                    <li class="flex items-center text-sm font-medium">
+                        <svg class="w-5 h-5 text-indigo-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        Frontend-Ready Handoffs
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+                <span class="text-indigo-500 text-xs font-bold tracking-widest uppercase mb-4 block">Expertise</span>
+                <h2 class="text-3xl md:text-4xl font-bold">Design solutions for every stage of growth.</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="p-8 rounded-2xl bg-neutral-900/40 card-hover" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-12 h-12 bg-neutral-800 rounded-lg flex items-center justify-center mb-6 text-indigo-400">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">UI Design (Web/Mobile)</h3>
+                    <p class="text-neutral-400 text-sm leading-relaxed">Visually stunning, responsive interfaces designed to align with your brand identity and accessibility standards.</p>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-neutral-900/40 card-hover" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-12 h-12 bg-neutral-800 rounded-lg flex items-center justify-center mb-6 text-indigo-400">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">UX Research</h3>
+                    <p class="text-neutral-400 text-sm leading-relaxed">I dive deep into user behaviors and pain points to validate assumptions before we push a single pixel.</p>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-neutral-900/40 card-hover" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-12 h-12 bg-neutral-800 rounded-lg flex items-center justify-center mb-6 text-indigo-400">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">SaaS Dashboards</h3>
+                    <p class="text-neutral-400 text-sm leading-relaxed">Turning complex datasets into clean, actionable visualization panels that power user productivity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="work" class="py-24 px-6 bg-neutral-950/50">
+        <div class="max-w-7xl mx-auto">
+            <span class="text-indigo-500 text-xs font-bold tracking-widest uppercase mb-4 block">Selected Work</span>
+            <h2 class="text-3xl md:text-4xl font-bold mb-16">Recent Case Studies.</h2>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center mb-24" data-aos="fade-up">
+                <div class="bg-neutral-900 rounded-2xl overflow-hidden aspect-[4/3] group cursor-pointer relative">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Dashboard" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">FinTrack Analytics</h3>
+                    <p class="text-neutral-400 mb-4">Users were churning due to a cluttered interface. I spearheaded a complete UI overhaul simplifying data visualization.</p>
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div>
+                            <span class="block text-2xl font-bold text-white">35%</span>
+                            <span class="text-xs text-neutral-500 uppercase tracking-wide">Retention Increase</span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl font-bold text-white">20%</span>
+                            <span class="text-xs text-neutral-500 uppercase tracking-wide">Less Support Tickets</span>
+                        </div>
+                    </div>
+                    <a href="#" class="text-indigo-500 font-semibold hover:text-indigo-400 inline-flex items-center">
+                        View Case Study <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center" data-aos="fade-up">
+                <div class="lg:order-2 bg-neutral-900 rounded-2xl overflow-hidden aspect-[4/3] group cursor-pointer relative">
+                    <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Mobile App" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
+                </div>
+                <div class="lg:order-1">
+                    <h3 class="text-2xl font-bold mb-4">E-Comura App</h3>
+                    <p class="text-neutral-400 mb-4">Addressing high cart abandonment with a streamlined 3-step checkout flow and integrated trust signals.</p>
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div>
+                            <span class="block text-2xl font-bold text-white">18%</span>
+                            <span class="text-xs text-neutral-500 uppercase tracking-wide">Conversion Lift</span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl font-bold text-white">30d</span>
+                            <span class="text-xs text-neutral-500 uppercase tracking-wide">Implementation Time</span>
+                        </div>
+                    </div>
+                    <a href="#" class="text-indigo-500 font-semibold hover:text-indigo-400 inline-flex items-center">
+                        View Case Study <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="py-24 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-indigo-500 text-xs font-bold tracking-widest uppercase mb-4 block">Workflow</span>
+                <h2 class="text-3xl md:text-4xl font-bold">From concept to launch.</h2>
+            </div>
+            
+            <div class="space-y-8 relative">
+                <div class="absolute left-4 top-4 bottom-4 w-px bg-neutral-800 md:left-1/2"></div>
+
+                <div class="relative pl-12 md:pl-0 md:grid md:grid-cols-2 md:gap-12 items-center" data-aos="fade-up">
+                    <div class="md:text-right">
+                        <h3 class="text-xl font-bold text-white">01. Discovery</h3>
+                        <p class="text-neutral-500 text-sm mt-2">We define the core problem, analyze competitors, and understand your users' needs.</p>
+                    </div>
+                    <div class="absolute left-0 w-8 h-8 bg-neutral-900 border border-indigo-500 rounded-full flex items-center justify-center md:left-1/2 md:-translate-x-1/2">
+                        <div class="w-2 h-2 bg-indigo-500 rounded-full"></div>
+                    </div>
+                    <div class="hidden md:block"></div>
+                </div>
+
+                <div class="relative pl-12 md:pl-0 md:grid md:grid-cols-2 md:gap-12 items-center" data-aos="fade-up">
+                    <div class="hidden md:block"></div>
+                    <div class="absolute left-0 w-8 h-8 bg-neutral-900 border border-neutral-700 rounded-full flex items-center justify-center md:left-1/2 md:-translate-x-1/2">
+                        <div class="w-2 h-2 bg-white rounded-full"></div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white">02. Wireframing</h3>
+                        <p class="text-neutral-500 text-sm mt-2">Skeleton layouts to lock in functionality without the distraction of colors.</p>
+                    </div>
+                </div>
+
+                <div class="relative pl-12 md:pl-0 md:grid md:grid-cols-2 md:gap-12 items-center" data-aos="fade-up">
+                    <div class="md:text-right">
+                        <h3 class="text-xl font-bold text-white">03. Visual Design</h3>
+                        <p class="text-neutral-500 text-sm mt-2">Applying the design system, typography, and high-fidelity polish.</p>
+                    </div>
+                    <div class="absolute left-0 w-8 h-8 bg-neutral-900 border border-neutral-700 rounded-full flex items-center justify-center md:left-1/2 md:-translate-x-1/2">
+                        <div class="w-2 h-2 bg-white rounded-full"></div>
+                    </div>
+                    <div class="hidden md:block"></div>
+                </div>
+
+                <div class="relative pl-12 md:pl-0 md:grid md:grid-cols-2 md:gap-12 items-center" data-aos="fade-up">
+                    <div class="hidden md:block"></div>
+                    <div class="absolute left-0 w-8 h-8 bg-neutral-900 border border-neutral-700 rounded-full flex items-center justify-center md:left-1/2 md:-translate-x-1/2">
+                        <div class="w-2 h-2 bg-white rounded-full"></div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white">04. Handoff</h3>
+                        <p class="text-neutral-500 text-sm mt-2">Usability testing followed by a developer-friendly Figma-to-Code handoff.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 bg-neutral-900/30">
+        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+            <div class="p-8 rounded-2xl bg-neutral-950 border border-neutral-800" data-aos="fade-up">
+                <div class="flex text-indigo-500 mb-4">
+                    ★★★★★
+                </div>
+                <p class="text-lg text-neutral-300 italic mb-6">"I've worked with many designers, but they are different. They actually understand business metrics. The dashboard redesign didn't just look good—it saved our engineering team weeks."</p>
+                <div>
+                    <h4 class="font-bold text-white">Sarah Jenkins</h4>
+                    <span class="text-sm text-neutral-500">CEO at TechFlow</span>
+                </div>
+            </div>
+            <div class="p-8 rounded-2xl bg-neutral-950 border border-neutral-800" data-aos="fade-up" data-aos-delay="100">
+                <div class="flex text-indigo-500 mb-4">
+                    ★★★★★
+                </div>
+                <p class="text-lg text-neutral-300 italic mb-6">"Professional, fast, and incredibly talented. The landing page design helped us secure our Seed round. Highly recommended for any startup founder."</p>
+                <div>
+                    <h4 class="font-bold text-white">David Chen</h4>
+                    <span class="text-sm text-neutral-500">Product Lead at StartScale</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="py-32 px-6 text-center">
+        <div class="max-w-3xl mx-auto" data-aos="zoom-in">
+            <h2 class="text-5xl md:text-6xl font-bold tracking-tight mb-8">Ready to build something <span class="text-indigo-500">iconic?</span></h2>
+            <p class="text-xl text-neutral-400 mb-12">I’m currently accepting new projects for Q2. Let’s discuss how we can improve your product’s experience.</p>
+            
+            <a href="#" class="inline-block px-10 py-5 bg-white text-black font-bold text-lg rounded-full hover:bg-neutral-200 transition-all transform hover:scale-105">
+                Book a Discovery Call
+            </a>
+
+            <div class="flex justify-center space-x-8 mt-16 text-neutral-500">
+                <a href="https://www.linkedin.com/in/krishna-reddy-89474a2b4" target="_blank" class="hover:text-white transition-colors">LinkedIn</a>
+                <a href="mailto:workwith.krishnareddy@gmail.com" class="hover:text-white transition-colors">Email</a>
+                <a href="https://www.instagram.com/krishhh.reddy?utm_source=qr&igsh=aDc4OTRja2Jwenlw" target="_blank" class="hover:text-white transition-colors">Instagram</a>
+                <a href="assets/resume.pdf" target="_blank" class="hover:text-white transition-colors">Resume</a>
+            </div>
+            
+            <div class="mt-20 pt-8 border-t border-neutral-900 text-xs text-neutral-600 flex flex-col md:flex-row justify-between items-center">
+                <p>&copy; 2024 krishna reddy. All Rights Reserved.</p>
+                <p>Designed with intention.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            offset: 100,
+            duration: 800,
+            easing: 'ease-out-cubic',
+        });
+    </script>
+</body>
+</html>
